@@ -1,7 +1,7 @@
 import React from 'react';
 import Menolista from './components/Menolista';
 import Menolomake from './components/Menolomake'
-import { Jumbotron } from 'react-bootstrap';
+import { Container, Jumbotron } from 'react-bootstrap';
 
 const menot = [{tapahtuma_id: '1', maara: '50', kohde: {menotyyppiId: '1', menotyyppiNimi: 'Ruoka ja juoma kotona', tarkennus: 'Alepa'}, pvm: '25.9.2020'},
                {tapahtuma_id: '2', maara: '650', kohde: {menotyyppiId: '3', menotyyppiNimi: 'Asuminen', tarkennus: 'vuokra/vastike'}, pvm: '02.9.2020'}, 
@@ -26,14 +26,22 @@ const menot = [{tapahtuma_id: '1', maara: '50', kohde: {menotyyppiId: '1', menot
 function MenotApp() {
     return(
         <div>
-            <Jumbotron color-primary>
+            
+            <Jumbotron>
+            <Container>
                 <h1>Taloudenhallintasovellus</h1>
                 <p>Tämä on yksinkertainen taloudenhallintasovellus, johon voit kirjata menojasi.</p>
+            </Container>
             </Jumbotron>
-
-            <Menolomake pituus = { menot }/>
-            
-            <Menolista menot = { menot } />
+            <Container>
+                <h3>Lisää meno</h3>
+                <Menolomake pituus = { menot }/>
+            </Container>
+            <p></p>
+            <Container>
+                <h3>Menot</h3>
+                <Menolista menot = { menot } />
+            </Container>
         </div>
     );
 }
