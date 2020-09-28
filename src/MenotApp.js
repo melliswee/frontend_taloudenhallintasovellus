@@ -35,7 +35,7 @@ function MenotApp() {
             </Jumbotron>
             <Container>
                 <h3>Lisää meno</h3>
-                <Menolomake pituus = { menot }/>
+                <Menolomake />
             </Container>
             <p></p>
             <Container>

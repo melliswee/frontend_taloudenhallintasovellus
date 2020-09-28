@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import { Form, Button } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 
-function Menolomake(props) {
+//lomakkeessa pitäisi olla syötteen tarkistus jotta saadaan vain oikeanlaisia tietoja lisättyä
+//pitää keksiä tapa saada seuraava uniikki id lisättävälle riville
+
+function Menolomake() {
 
     const [meno, setValues] = useState( { id: '0', maara: '', kohde: {menotyyppiId: '0', menotyyppiNimi: '', tarkennus: ''}, pvm: '' } );
 
@@ -29,6 +32,7 @@ function Menolomake(props) {
 
     const lisaaMeno = (e) => {
         e.preventDefault();
+        //tässä vain tyhjennetään lomake
         setValues({id: '0', maara: '', kohde: {menotyyppiId: '0', menotyyppiNimi: '', tarkennus: ''}, pvm: '' });
     }
 

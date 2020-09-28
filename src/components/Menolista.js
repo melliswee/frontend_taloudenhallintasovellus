@@ -2,6 +2,9 @@ import React from 'react';
 import Table from 'react-bootstrap/Table';
 import Summaaja from './Summaaja';
 
+//TODO mappaus-key: vaihda key:ksi tapahtumaId lopullisessa versiossa
+//Voisiko listaan lisätä rivin joka toimisi lomakkeena
+
 function Menolista(props) {
     return (
 
