@@ -41,7 +41,7 @@ function Menolomake() {
         <Form >
             <Form.Group controlId='formBasicMaara'>
                 <Form.Label htmlFor='maara'>Määrä </Form.Label><br/>
-                <input type='text' name='maara' value = { meno.maara }
+                <input type='number' name='maara' value = { meno.maara }
                     onChange={ (e) => muuta(e)} /><br />
             </Form.Group>
             <Form.Group controlId='formBasicMenotyyppiNimi'>
@@ -56,7 +56,7 @@ function Menolomake() {
             </Form.Group>
             <Form.Group controlId='formBasicPvm'>
                 <Form.Label htmlFor='pvm'>Päivämäärä </Form.Label><br/>
-                <input type='text' name='pvm' value = { meno.pvm }
+                <input type='date' name='pvm' value = { meno.pvm }
                     onChange={ (e) => muuta(e)} /><br />
             </Form.Group>
             <input type='submit' value='Lisää' onClick={ (e) => lisaaMeno(e) }/>

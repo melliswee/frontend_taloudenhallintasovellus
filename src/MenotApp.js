@@ -3,6 +3,7 @@ import Menolista from './components/Menolista';
 import Menolomake from './components/Menolomake'
 import { Container, Jumbotron } from 'react-bootstrap';
 
+
 const menot = [{tapahtuma_id: '1', maara: '50', kohde: {menotyyppiId: '1', menotyyppiNimi: 'Ruoka ja juoma kotona', tarkennus: 'Alepa'}, pvm: '25.9.2020'},
                {tapahtuma_id: '2', maara: '650', kohde: {menotyyppiId: '3', menotyyppiNimi: 'Asuminen', tarkennus: 'vuokra/vastike'}, pvm: '02.9.2020'}, 
                {tapahtuma_id: '3', maara: '19', kohde: {menotyyppiId: '3', menotyyppiNimi: 'Asuminen', tarkennus: 'vesimaksu'}, pvm: '2.9.2020'},
